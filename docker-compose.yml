@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  skopos:
+    image: opsani/skopos:edge
+    ports:
+      - "8100:8100"
+    environment:
+      skstkn: pwd
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
